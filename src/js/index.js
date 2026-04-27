@@ -1,5 +1,7 @@
 //TODO: API (https://openweathermap.org/api/current?collection=current_forecast)
 
+import { onFormSubmit } from './handlers';
+import { refs } from './refs';
 /*
 TODO: Weather card template:
 
@@ -24,3 +26,5 @@ TODO: Weather card template:
   </ul>
 </div>
 */
+
+refs.form.addEventListener('submit', onFormSubmit);
